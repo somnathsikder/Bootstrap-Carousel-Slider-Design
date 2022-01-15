@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Carousel slider </title>
+	<!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<style>
+		.carousel-item{
+			height: 32rem;
+			background-color: #000;
+			position: relative;
+			color: white;
+		}
+		.container{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			padding-bottom: 50px;
+		}
+
+		.overlay-image{
+			position: absolute;
+			background-size: cover;
+			background-position: center;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			top: 0;
+			opacity: .5;
+		}
+	</style>
+</head>
+<body>
+	<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-bs-interval="8000">
+				<div class="overlay-image" style= "background-image: url(img/slide1.jpg);"> </div>
+				<div class="container">
+					<h1> Example Slide 01 </h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					<a href="#" class="btn btn-lg btn-primary"> Download My Profile </a>
+				</div>
+			</div>
+			<div class="carousel-item" data-bs-interval="800">
+				<div class="overlay-image" style= "background-image: url(img/slide2.jpg);"> </div>
+				<div class="container">
+					<h1> Example Slide 02 </h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					<a href="#" class="btn btn-lg btn-primary"> Download My Profile </a>
+				</div>
+			</div>
+			<div class="carousel-item" data-bs-interval="800">
+				<div class="overlay-image" style= "background-image: url(img/slide3.jpg);"> </div>
+				<div class="container">
+					<h1> Example Slide 03 </h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					<a href="#" class="btn btn-lg btn-primary"> Download My Profile </a>
+				</div>
+			</div>
+		</div>
+		<a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+			<span class="sr-only"></span>
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		</a>
+		<a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+			<span class="sr-only"></span>
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		</a>
+	</div>
+<script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
